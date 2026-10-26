@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Baiano — Design</title>
+  <meta name="description" content="Portfólio de design de Vinícius Sena (baianofps7): identidade visual, telas de live, painéis, alertas e motion.">
+  <link rel="preload" href="assets/fonts/anton-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="grain" aria-hidden="true"></div>
+
+  <header class="topo">
+    <a href="#" class="logo" aria-label="Início"><img src="assets/logo_black.png" alt="Baiano"></a>
+    <nav>
+      <a href="#trabalhos">Trabalhos</a>
+      <a href="#sobre">Sobre</a>
+      <a href="#contato">Contato</a>
+    </nav>
+    <div class="squares" aria-hidden="true"><i></i><i></i><i></i></div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="bigv" aria-hidden="true">BAIANOFPS7</div>
+      <img class="liquid" src="assets/liquid.webp" alt="" aria-hidden="true">
+
+      <div class="hero-texto">
+        <div class="topl">
+          <span class="chip"><i class="dot"></i>DESIGN POR HOBBY</span>
+          <span class="mono">Vinícius Sena · Bahia</span>
+        </div>
+        <h1>Marcas, telas<br>&amp; ideias que<br><span class="risco">não ficam</span> na gaveta.</h1>
+        <div class="tag"><span class="rule"></span><p>Nas horas vagas eu crio identidades visuais, telas de live e motion. <b>Cola e dá uma olhada.</b></p></div>
+        <a href="#trabalhos" class="botao">Ver trabalhos <span>↓</span></a>
+      </div>
+
+      <img class="person" src="assets/person.webp" alt="Ilustração do Vinícius de moletom branco">
+    </section>
+
+    <div class="faixa" aria-hidden="true">
+      <div class="faixa-trilho" id="faixa"></div>
+    </div>
+
+    <section id="trabalhos" class="secao">
+      <div class="secao-topo">
+        <div>
+          <p class="mono">01 / Trabalhos</p>
+          <h2>Trabalhos selecionados</h2>
+        </div>
+        <div class="filtros" id="filtros" role="tablist"></div>
+      </div>
+      <div class="grade" id="grade"></div>
+    </section>
+
+    <section id="sobre" class="secao sobre">
+      <div>
+        <p class="mono">02 / Sobre</p>
+        <h2>Quem tá do<br>outro lado</h2>
+      </div>
+      <div class="sobre-conteudo">
+        <p>Sou o Vinícius — o <b>Baiano</b>. Design é o meu hobby: gosto de pegar uma ideia solta e transformar numa identidade inteira, do lettering ao último detalhe animado.</p>
+        <p>Já fiz a identidade do meu canal na Twitch, o <b>baianofps7</b>, a marca da <b>Sena Tech</b> no Instagram e a interface do app da <b>King Barbearia</b>. Em cada um, tudo conversa entre si, da tela inicial ao último detalhe.</p>
+        <ul class="ferramentas">
+          <li>Identidade visual</li><li>Lettering</li><li>Motion</li><li>Overlays de live</li><li>Social media</li><li>UI de apps</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contato" class="contato">
+      <img class="contato-logo" src="assets/logo_white.png" alt="" aria-hidden="true">
+      <p class="mono">03 / Contato</p>
+      <h2>Bora criar algo junto?</h2>
+      <p class="contato-sub">Aberto a collabs, projetos pessoais e troca de ideia.</p>
+      <a class="email" href="mailto:contato.baianofps@outlook.com">contato.baianofps@outlook.com</a>
+      <div class="redes">
+        <a class="social" href="https://instagram.com/viniciussenaba" target="_blank" rel="noopener"><span class="ic" data-i="instagram"></span>viniciussenaba</a>
+        <a class="social" href="https://x.com/baianofps7" target="_blank" rel="noopener"><span class="ic" data-i="x"></span>baianofps7</a>
+        <a class="social" href="https://twitch.tv/baianofps7" target="_blank" rel="noopener"><span class="ic" data-i="twitch"></span>baianofps7</a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="squares" aria-hidden="true"><i></i><i></i><i></i></div>
+    <span class="mono">© <span id="ano"></span> Vinícius Sena · baianofps7</span>
+  </footer>
+
+  <dialog id="modal" class="modal">
+    <button class="fechar" id="fechar" aria-label="Fechar">×</button>
+    <div class="modal-arte" id="modal-arte"></div>
+    <div class="modal-texto">
+      <p class="mono" id="modal-cat"></p>
+      <h3 id="modal-titulo"></h3>
+      <p id="modal-desc"></p>
+      <div class="galeria" id="modal-galeria"></div>
+    </div>
+  </dialog>
+
+  <script src="assets/icons.js"></script>
+  <script src="projetos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
